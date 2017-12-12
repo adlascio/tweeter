@@ -1,0 +1,15 @@
+nav {
+    position: fixed;
+    height: 80px;
+    width: 100%;
+    background-color: #00a087;
+    color: #e8fdff;
+    padding: 0px 2em 0px 2em;
+    display: flex;
+    align-items: center;
+}
+
+#nav-bar .header {
+    font-size: 2em;
+    margin-left: 10px;
+}
