@@ -1,0 +1,31 @@
+section {
+    background-color: #eee;
+    border-width: 5px;
+    border-radius: 5px;
+    width: 400px;
+    margin: auto;
+}
+
+h2 {
+    margin: 10px;
+    border-bottom: 0.5px solid black;
+}
+
+textarea {
+    padding: 5px;
+    box-sizing: border-box;
+    width: 380px;
+    margin-left: 10px;
+
+}
+
+input {
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+#counter {
+    float: right;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
