@@ -91,16 +91,35 @@ function createTweetElement(tweet){
 }
 
 function renderTweets(tweets) {
-    for (let i in tweets) {
-        createTweetElement(tweets[i]);
-        $(".tweets").append(createTweetElement(tweets[i]));
-    }
-    return $(".tweets");
-  }
+  $('.tweets')
+  .empty()
+  .html(tweets.map(createTweetElement).reverse());  
+}
 
   $( document ).ready(function() {
     renderTweets(data);
+    function getTweet() {
+      $.ajax({
+        method: 'GET',
+        url: '/tweets',
+        dataType: 'json'
+      }).done(function(result){
+        renderTweets(result);
+      })
+    }
+    
+    function submitNewTweet() {
+      var $submit = $('#new-tweet');
+      $submit.on('submit', function(clickEvent) {
+        clickEvent.preventDefault();
+        $.ajax({
+          method: 'POST',
+          url: this.action,
+          data: $(this).serialize()
+        }).done(function() {
+          getTweet();
+        });
+      })
+    }
+    submitNewTweet();
   });
-
-
-

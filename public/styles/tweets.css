@@ -20,19 +20,23 @@ section.tweets article:hover {
 }
 
 section.tweets article:hover header {
-    background-color: #a0a0a0;    
+    background-color: #e6e6ee;    
 }
 
 section.tweets article:hover .name {
-   color: red;  
+   color: #244751;  
 }
+
+section.tweets article:hover .username {
+    color: grey;  
+ }
 
 section.tweets article .fa {
     display: none;  
  }
 
 section.tweets article:hover .fa {
-    color: green;
+    color: #39c2a9;
     display: inline;
     padding: 0 5px;  
  }
@@ -53,7 +57,6 @@ section.tweets header {
 }
 
 section.tweets header:hover {
-    /* wbackground-color: #a0a0a0; */
     height: 70px;
     padding: 10px;
     display: flex;
@@ -76,7 +79,7 @@ section.tweets footer {
     font-weight: bold;
     margin-left: 10px;
     font-size: 1.5em;
-    color: 
+    color: #56676b;
     
 }
 
