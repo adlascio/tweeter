@@ -1,0 +1,100 @@
+
+
+section.tweets article {
+    background-color: white;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    width: 400px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+section.tweets article:hover {
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 400px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+section.tweets article:hover header {
+    background-color: #a0a0a0;    
+}
+
+section.tweets article:hover .name {
+   color: red;  
+}
+
+section.tweets article .fa {
+    display: none;  
+ }
+
+section.tweets article:hover .fa {
+    color: green;
+    display: inline;
+    padding: 0 5px;  
+ }
+
+section.tweets h3 {
+    padding-left: 10px;
+    font-weight: normal;
+    font-size: 1em;
+
+}
+
+section.tweets header {
+    background-color: #eee;
+    height: 70px;
+    padding: 10px;
+    display: flex;
+
+}
+
+section.tweets header:hover {
+    /* wbackground-color: #a0a0a0; */
+    height: 70px;
+    padding: 10px;
+    display: flex;
+}
+
+section.tweets div{
+    align-items: center;
+}
+
+section.tweets footer {
+    border-top: 1px solid #eee;
+    padding: 10px;
+    font-size: 12px; 
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.name {
+    font-weight: bold;
+    margin-left: 10px;
+    font-size: 1.5em;
+    color: 
+    
+}
+
+.username {
+
+    margin-left: auto;
+    color: #a0a0a0;
+    font-size: 12px;
+
+}
+
+.tweet {
+    height: 80px;
+}
+
+div > p{
+    padding: 10px;
+}
+
+
+    
