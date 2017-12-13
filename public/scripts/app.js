@@ -111,15 +111,22 @@ function renderTweets(tweets) {
     function submitNewTweet() {
       var $submit = $('#new-tweet');
       $submit.on('submit', function(clickEvent) {
+        var textArea = $('textarea').val().length;
         clickEvent.preventDefault();
-        $.ajax({
-          method: 'POST',
-          url: this.action,
-          data: $(this).serialize()
-        }).done(function() {
-          getTweet();
-        });
-      })
+        if (textArea > 140) {
+          alert("Tweet over 140 characters. Sorry, can't post it.");
+        } else if(textArea === 0) {
+          alert('Please enter a tweet.');
+        } else {
+          $.ajax({
+            method: 'POST',
+            url: this.action,
+            data: $(this).serialize()
+          }).done(function() {
+            getTweet();
+          });
+        }
+      })  
     }
     submitNewTweet();
   });
