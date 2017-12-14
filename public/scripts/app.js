@@ -104,6 +104,7 @@ function renderTweets(tweets) {
         url: '/tweets',
         dataType: 'json'
       }).done(function(result){
+        $('textarea').val("");
         renderTweets(result);
       })
     }
