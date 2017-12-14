@@ -13,3 +13,19 @@ nav {
     font-size: 2em;
     margin-left: 10px;
 }
+
+#compose {
+    background: rgba(255,255,255,0.7);
+    float: right;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+    color: #00a087;
+    margin-left: auto;
+}
+
+#compose:hover {
+    background: rgba(255,255,255,1);
+    color: black;
+}
+

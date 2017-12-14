@@ -130,4 +130,11 @@ function renderTweets(tweets) {
       })  
     }
     submitNewTweet();
+    
+    var $compose = $('#compose');
+    $compose.on('click', function(clickEvent){
+      $('.new-tweet').slideToggle();
+    }); 
   });
+
+
