@@ -15,9 +15,6 @@ MongoClient.connect(MONGODB_URI, (err, db) => {
   const DataHelpers = require("./lib/data-helpers.js")(db);
   const tweetsRoutes = require("./routes/tweets")(DataHelpers);
   app.use("/tweets/", tweetsRoutes);
-  console.log("connected to mongo");
-  
-
 });
 
 app.listen(PORT, () => {
