@@ -11,6 +11,7 @@ const MONGODB_URI = "mongodb://localhost:27017/tweeter";
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
+//connect to MongoDB
 MongoClient.connect(MONGODB_URI, (err, db) => {
   const DataHelpers = require("./lib/data-helpers.js")(db);
   const tweetsRoutes = require("./routes/tweets")(DataHelpers);
