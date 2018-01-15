@@ -19,7 +19,7 @@ Tweeter is a simple, single-page Twitter clone.
 - md5
 - mongodb
 
-##Screenshots
+## Screenshots
 
 !["Tweet (hover) and compose text box visible"](https://github.com/adlascio/tweeter/blob/master/docs/hover_tweet.png)
 
